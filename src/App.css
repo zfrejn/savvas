@@ -13,7 +13,7 @@ body {
   position: fixed;  
   display: flex;
   flex-direction: column;
-  width: 260px;
+  max-width: 260px;
   background-color: #F9FAFC;
   height: 100vh;
 }
@@ -66,31 +66,38 @@ body {
   top: 0;
   right: 0;
   height: 85px;
-  width: 85%;
+  width: 100%;
   padding: 16px 38px 19px 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   display: flex;
 }
 .buttons {
-  padding-left: 885px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 25%;
+}
+
+.link {
+  text-decoration: none;
+  color: #212529;
 }
 
 .input {
   font-weight: 500;
   font-size: 12px;
   line-height: 37px;
-  color: #212529;
   width: 96px;
   height: 50px;
   border: 1px solid #D9D9D9;
   border-radius: 45px;
   background-color: #fff;
+  text-decoration: none;
 }
 .login {
   font-weight: 500;
   font-size: 12px;
   line-height: 37px;
-  color: #212529;
   width: 128px;
   height: 50px;
   border: none;
@@ -112,7 +119,7 @@ body {
 .cardList {
   display: flex;
   flex-wrap: wrap;
-  width: 1550px;
+  max-width: 1550px;
   height: fit-content;
   padding: 85px 38px 0 288px;
 }
@@ -197,4 +204,147 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 6px;
+}
+
+.cardOpen {
+  display: flex;
+  width: 1400px;
+  height: fit-content;
+  background-color: #fff;
+  padding: 88px 38px 0 288px;
+}
+
+.cardOpenInfo {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  background-color: #fff;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 16px;
+}
+
+.cardOpenPrice {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 205px;
+  background-color: #D9D9D9;
+  border-radius: 14px;
+  padding: 30px 10px 10px 10px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  color: #212529;
+  margin-left: 16px;
+}
+
+.priceBtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 297px;
+  height: 116px;
+  margin-top: 18px;
+}
+
+.buyBtn, .commBtn {
+  width: 297px;
+  height: 53px;
+  background-color: #F9F6F6;
+  border-radius: 9px;
+  color: #212529;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+}
+
+.buyBtn:hover, .commBtn:hover {
+  background-color: #ebebee;
+}
+
+.titleCardOpen {
+  min-height: 70px;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 19px;
+  color: #495057;
+}
+
+.cardOpenImg {
+  height: 468px;
+  width: 100%;
+  background: #D9D9D9;
+}
+
+.descriptionTitle {
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: italic;
+}
+
+.descriptionCardOpen {
+  margin-top: 17px;
+  width: 85%;
+  height: fit-content;
+  font-size: 14px;
+  line-height: 24px;
+  color: #212529;
+}
+
+.tags {
+  margin-top: 30px;
+  width: 95%;
+  height: fit-content;
+  font-size: 14px;
+  line-height: 24px;
+  color: #212529;
+  margin-bottom: 26px;
+}
+
+.userInCardOpen {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+}
+
+.userImgCardOpen {
+  width: 40px;
+  height: 40px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.userNames {
+  display: flex;
+  flex-direction: column;
+}
+
+.userFullName {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+}
+
+.userNick {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #495057;
+}
+
+.cardLink {
+  text-decoration: none;
 }

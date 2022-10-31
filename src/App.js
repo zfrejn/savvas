@@ -1,14 +1,18 @@
 import './App.css';
 import CardList from './components/CardList/CardList';
-import Header from './components/Header/Header';
-import LeftPart from './components/LeftPart/LeftPart'
+import Layout from './components/Layout/Layout';
+import { Route, Routes } from 'react-router-dom';
+import CardOpen from './components/CardOpen/CardOpen';
 
 function App() {
   return (
     <div className="App">
-      <LeftPart/>
-      <Header/>
-      <CardList/>
+      <Routes>
+        <Route path='/' element={<Layout/>}>
+          <Route path='/' element={<CardList/>}/>
+          <Route path='/card' element={<CardOpen/>}/>
+        </Route>
+      </Routes>
     </div>
   );
 }
