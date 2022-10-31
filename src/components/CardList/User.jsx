@@ -1,12 +1,12 @@
 import React from 'react'
 
-const User = () => {
+const User = ({name, nick}) => {
     return (
         <div className='user'>
             <div className='userImg'></div>
             <div className='userInfo'>
-                <p className='userName'>Алан Баллаев</p>
-                <p className='userLogin'>@alan</p>
+                <p className='userName'>{name}</p>
+                <p className='userLogin'>{nick}</p>
             </div>
         </div>
     )

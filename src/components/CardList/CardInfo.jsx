@@ -2,14 +2,11 @@ import React from 'react'
 import CardDescription from './CardDescription'
 import CardPrice from './CardPrice'
 
-const CardInfo = () => {
+const CardInfo = ({price, text}) => {
     return (
         <div className='cardInfo'>
-            <CardDescription text={
-                `Я напишу сценарий и контент 
-                для  рекламной компании`
-            }/>
-            <CardPrice price={80000}/>
+            <CardDescription text={text}/>
+            <CardPrice price={price}/>
         </div>        
     )
 }
