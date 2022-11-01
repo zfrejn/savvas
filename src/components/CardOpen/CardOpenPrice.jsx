@@ -2,10 +2,10 @@ import React from 'react'
 import Price from './Price'
 import PriceBtns from './PriceBtns'
 
-const CardOpenPrice = () => {
+const CardOpenPrice = ({price}) => {
     return(
         <div className='cardOpenPrice'>
-            <Price price={80000}/>
+            <Price price={price}/>
             <PriceBtns/>
         </div>
     )

@@ -1,12 +1,12 @@
 import React from 'react'
 
-const UserInCardOpen = () => {
+const UserInCardOpen = ({name, nick}) => {
     return (
         <div className='userInCardOpen'>
             <div className='userImgCardOpen'></div>
             <div className='userNames'>
-                <p className='userFullName'>Сталкер</p>
-                <p className='userNick'>@alan</p>
+                <p className='userFullName'>{name}</p>
+                <p className='userNick'>{nick}</p>
             </div>
         </div>        
     )

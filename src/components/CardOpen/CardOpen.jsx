@@ -3,11 +3,18 @@ import CardOpenInfo from './CardOpenInfo'
 import CardOpenPrice from './CardOpenPrice'
 
 
-const CardOpen = () => {
+const CardOpen = ({price, title, desription, tags, nick, name}) => {
     return (
         <div className='cardOpen'>
-            <CardOpenInfo/>
-            <CardOpenPrice/>
+            <CardOpenInfo 
+                title={title}
+                descTitle={'Описание'}
+                desription={desription} 
+                tags={tags} 
+                nick={nick}
+                name={name}    
+            />
+            <CardOpenPrice price={price}/>
         </div>
     )
 }

@@ -6,15 +6,15 @@ import Tags from './Tags'
 import TitleCardOpen from './TitleCardOpen'
 import UserInCardOpen from './UserInCardOpen'
 
-const CardOpenInfo = () => {
+const CardOpenInfo = ({title, descTitle, desription, tags, nick, name}) => {
     return (
         <div className='cardOpenInfo'>
-            <TitleCardOpen text={'Я напишу сценарий и контент для вашей рекламной компании'}/>
+            <TitleCardOpen text={title}/>
             <CardOpenImg/>
-            <DescriptionTitle text={'Описание'}/>
-            <DescriptionCardOpen/>
-            <Tags/>
-            <UserInCardOpen/>
+            <DescriptionTitle text={descTitle}/>
+            <DescriptionCardOpen desription={desription}/>
+            <Tags tags={tags}/>
+            <UserInCardOpen nick={nick} name={name}/>
         </div>
     )
 }

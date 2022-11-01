@@ -27,6 +27,7 @@ body {
 .logo {
   width: 104px;
   height: 55px;
+  /* background-image: url('./img/logo.png'); */
   background-image: url('./img/logo.png');
   background-size: cover;
 }
@@ -143,9 +144,10 @@ body {
 
 .cardImage {
   width: 100%;
-  height: 45%;
+  height: 60%;
   border-radius: 10px 10px 0 0;
-  background-image: url('./img/cardImage.png');
+  /* background-image: url('./img/reactimg.jpg'); */
+  background-image: url('./img/reactimg.jpg');
   background-size: cover;
 }
 
@@ -208,7 +210,8 @@ body {
 
 .cardOpen {
   display: flex;
-  width: 1400px;
+  flex-wrap: wrap;
+  max-width: 1400px;
   height: fit-content;
   background-color: #fff;
   padding: 88px 38px 0 288px;
@@ -270,7 +273,7 @@ body {
 .titleCardOpen {
   min-height: 70px;
   width: 100%;
-  text-align: center;
+  text-align: start;
   padding-top: 30px;
   font-weight: 400;
   font-size: 21px;
@@ -281,11 +284,12 @@ body {
 .cardOpenImg {
   height: 468px;
   width: 100%;
-  background: #D9D9D9;
+  background-image: url('./img/reactimg.jpg');
+  background-size: cover;
 }
 
 .descriptionTitle {
-  margin-top: 17px;
+  margin-top: 17px; 
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
@@ -316,6 +320,7 @@ body {
   align-items: center;
   width: 100%;
   height: 45px;
+  margin-bottom: 20px;
 }
 
 .userImgCardOpen {
@@ -347,4 +352,8 @@ body {
 
 .cardLink {
   text-decoration: none;
+}
+
+.cardOpenPrice:focus {
+  background-color: red;
 }
