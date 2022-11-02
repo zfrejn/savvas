@@ -8,7 +8,20 @@ const CardList = () => {
 
     return (
         <ul className='cardList'>
-            {cards.map((item, i) => <Card name={item.name} nick={item.nick} price={item.price} key={i} text={item.text} id={item.id}/>)}
+            {cards.map((item, i) => {
+                return (
+                    <Card 
+                        key={i}
+                        name={item.name}
+                        nick={item.nick}
+                        price={item.price}
+                        text={item.text}
+                        id={item.id}
+                        userImg={item.userImg}
+                        cardImg={item.cardImg}
+                    />
+                )
+            })}
         </ul>
     )
 }

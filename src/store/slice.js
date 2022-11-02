@@ -1,31 +1,34 @@
 import React from 'react'
 import { createSlice } from "@reduxjs/toolkit"
+import imgs from '../style/importImg/importImg'
 
 const slice = createSlice({
     name: 'savvas',
     initialState: {
+        // Наполнение карточек
         cards: [
-            {id: 1, name: 'Александр Соколов', nick: '@sokol', price: 150000, text: 'Я буду вашим React JS Frontend разработчиком'},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python'},
-            {id: 3, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 4, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 5, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 6, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 7, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 8, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 9, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 10, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 11, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 12, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 13, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 14, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 15, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 16, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 17, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 18, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 19, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
-            {id: 20, name: 'Алан Баллаев', nick: '@alan', price: 80000, text: 'Я напишу сценарий и контент для  рекламной компании'},
+            {id: 1, name: 'Александр Соколов', nick: '@sokol', price: 150000, text: 'Я буду вашим React JS Frontend разработчиком', userImg: imgs.react.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.python.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100000', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
         ],
+        // Наполнение открытых карточек
         cardsOpen: [
             {
                 id: 1, 
@@ -41,8 +44,10 @@ const slice = createSlice({
                 tags: ' ',
                 user: {
                     name: 'Александр Соколов',
-                    nick: '@sokol'
-                }
+                    nick: '@sokol',
+                    img: imgs.react.user
+                },
+                img: imgs.react.description,
             },
             {
                 id: 2, 
@@ -60,10 +65,13 @@ const slice = createSlice({
                     7) Трудолюбивый и решительный.`,
                 user: {
                     name: 'Алексей Комков',
-                    nick: '@devpython'
-                }
+                    nick: '@devpython',
+                    img: imgs.python.user
+                },
+                img: imgs.python.description,
             }
         ],
+        // Текущая открытая карточка
         currentCard: {
             id: 1, 
             title: 'Я буду вашим React JS Frontend разработчиком', 
@@ -78,8 +86,10 @@ const slice = createSlice({
             tags: ' ',
             user: {
                 name: 'Александр Соколов',
-                nick: '@sokol'
-            }
+                nick: '@sokol',
+                img: imgs.react.user
+            },
+            img: imgs.react.description,
         },
     },
     reducers: {

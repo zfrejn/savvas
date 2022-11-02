@@ -16,12 +16,14 @@ function App() {
           <Route path='/' element={<CardList/>}/>
           <Route path='/card' 
             element={<CardOpen 
-              price={card?.price} 
-              title={card?.title} 
-              desription={card?.description} 
-              tags={card?.tags} 
-              nick={card?.user.nick} 
-              name={card?.user.name}             
+              price={card.price} 
+              title={card.title} 
+              desription={card.description} 
+              tags={card.tags} 
+              nick={card.user.nick} 
+              name={card.user.name}  
+              img={card.img}      
+              userImg={card.user.img}     
             />}/>
         </Route>
       </Routes>

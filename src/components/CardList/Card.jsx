@@ -6,15 +6,15 @@ import CardImage from './CardImage'
 import CardInfo from './CardInfo'
 import User from './User'
 
-const Card = ({name, nick, price, text, id}) => {
+const Card = ({name, nick, price, text, id, userImg, cardImg}) => {
 
   const dispatch = useDispatch()
 
     return (
       <Link to={'/card'} className='cardLink' onClick={() => dispatch(cardOpen(id))}>
         <li className='cardItem'>
-          <CardImage/>
-          <User name={name} nick={nick}/>
+          <CardImage img={cardImg}/>
+          <User name={name} nick={nick} userImg={userImg}/>
           <CardInfo price={price} text={text}/>
         </li> 
       </Link> 

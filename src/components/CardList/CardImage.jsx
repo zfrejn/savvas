@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-const CardImage = () => {
+const CardImage = ({img}) => {
     return (
-        <div className='cardImage'></div> 
+        <div className='cardImage' style={{backgroundImage:`url(${img})`, backgroundSize: 'cover'}}></div> 
     )
 }
 

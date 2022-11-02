@@ -1,8 +1,10 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-const CardOpenImg = () => {
+
+const CardOpenImg = ({img}) => {
     return (
-        <div className='cardOpenImg'></div>
+        <div className='cardOpenImg' style={{backgroundImage:`url(${img})`}}></div>
     )
 }
 

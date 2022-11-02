@@ -3,7 +3,7 @@ import CardOpenInfo from './CardOpenInfo'
 import CardOpenPrice from './CardOpenPrice'
 
 
-const CardOpen = ({price, title, desription, tags, nick, name}) => {
+const CardOpen = ({price, title, desription, tags, nick, name, img, userImg}) => {
     return (
         <div className='cardOpen'>
             <CardOpenInfo 
@@ -12,7 +12,9 @@ const CardOpen = ({price, title, desription, tags, nick, name}) => {
                 desription={desription} 
                 tags={tags} 
                 nick={nick}
-                name={name}    
+                name={name}  
+                img={img}  
+                userImg={userImg}
             />
             <CardOpenPrice price={price}/>
         </div>

@@ -4,10 +4,13 @@ import PriceBtns from './PriceBtns'
 
 const CardOpenPrice = ({price}) => {
     return(
-        <div className='cardOpenPrice'>
+        <div className='wrapper'>
+          <div className='cardOpenPrice'>
             <Price price={price}/>
             <PriceBtns/>
+          </div>  
         </div>
+        
     )
 }
 
