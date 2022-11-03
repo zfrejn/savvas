@@ -362,11 +362,42 @@ body {
     padding-left: 10px;
   }
   .cardList {
-    padding: 85px 30px 20px 30px;
+    padding: 0;
+    padding-top: 85px;
+    width: 100vw;
     justify-content: center;
   }
 
   .card {
+    width: 100%;
+  }
+
+  .cardOpen {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .cardOpenInfo {
+    width: 100vw;
+  }
+
+  .cardOpenImg {
+    max-width: 400px;
+  }
+
+  .userInCardOpen {
+    margin-bottom: 20px;
+  }
+
+  .cardOpenPrice {
+    width: 100%;
+  }
+
+  .priceBtns {
+    width: 100%;
+  }
+
+  .buyBtn, .commBtn {
     width: 100%;
   }
 }
