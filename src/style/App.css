@@ -359,9 +359,10 @@ body {
   .header {
     width: 100%;
     justify-content: center;
+    padding-left: 10px;
   }
   .cardList {
-    padding: 85px 16px 20px 0;
+    padding: 85px 30px 20px 30px;
     justify-content: center;
   }
 
@@ -369,4 +370,5 @@ body {
     width: 100%;
   }
 }
+
 
