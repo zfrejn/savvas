@@ -167,7 +167,7 @@ body {
 
 .cardDescription {
   color: #495057;
-  font-size: 12px; 
+  font-size: 14px; 
   padding: 0 10px 0 12px;
 }
 
@@ -412,6 +412,17 @@ body {
 
   .cardItem {
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .cardItem {
+    margin-right: 0;
+    margin-left: 16px;
+    justify-content: center;
+    width: 90%;
+    min-height: 400px;
+    max-height: 800px;
   }
 }
 
