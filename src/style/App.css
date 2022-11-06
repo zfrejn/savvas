@@ -22,12 +22,12 @@ body {
 .logoCont {
   height: 122px;
   width: 100%; 
-  padding: 15px 10px 10px 25px;
+  padding: 15px 10px 10px 56px;
 }
 
 .logo {
-  width: 232px;
-  height: 67px;
+  width: 185px;
+  height: 53px;
   background-image: url('./img/logo2.svg');
   background-size: cover;
 }
@@ -43,7 +43,6 @@ body {
   color:#495057;
   font-size: 16px;
   line-height: 45px;
-  margin-top: 20px;
 }
 
 .navItem {
