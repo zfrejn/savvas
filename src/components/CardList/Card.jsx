@@ -14,8 +14,9 @@ const Card = ({name, nick, price, text, id, userImg, cardImg}) => {
       <Link to={'/card'} className='cardLink' onClick={() => dispatch(cardOpen(id))}>
         <li className='cardItem'>
           <CardImage img={cardImg}/>
-          {/* <User name={name} nick={nick} userImg={userImg}/> */}
-          <CardInfo price={price} text={text}/>
+            <User name={name} nick={nick} userImg={userImg}/>
+            <CardInfo price={price} text={text}/>  
+                  
         </li> 
       </Link> 
             

@@ -164,6 +164,7 @@ body {
   color: #495057;
   font-size: 14px; 
   padding: 0 10px 0 12px;
+  line-height: 24px;
 }
 
 .cardPrice {
@@ -177,9 +178,8 @@ body {
 .user {
   display: flex;
   align-items: center;
-  padding-left: 10px;
   width: 100%;
-  height: 25%;
+  height: 15%;
 }
 
 .userImg {
@@ -441,6 +441,14 @@ body {
     height: fit-content;
     padding: 0;
     margin: 0;
+  }
+
+  .user {
+    display: none;
+  }
+
+  .cardDescription {
+    line-height: normal;
   }
 }
 
