@@ -22,12 +22,12 @@ body {
 .logoCont {
   height: 122px;
   width: 100%; 
-  padding: 15px 10px 10px 56px;
+  padding: 20px 10px 10px 56px;
 }
 
 .logo {
-  width: 185px;
-  height: 53px;
+  width: 157px;
+  height: 45px;
   background-image: url('./img/logo2.svg');
   background-size: cover;
 }
