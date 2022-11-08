@@ -91,13 +91,25 @@ const slice = createSlice({
             },
             img: imgs.react.description,
         },
+        burger: {
+            state: 'close',
+            display: 'none'
+        }
     },
     reducers: {
         cardOpen(state, action) {
             state.currentCard = state.cardsOpen.filter(item => item.id === action.payload)[0]
-        }
+        },
+        burgerOpen(state, action) {
+            state.burger.state = action.payload.state
+            state.burger.display = action.payload.display
+        },
+        burgerClose(state, action) {
+            state.burger.state = action.payload.state
+            state.burger.display = action.payload.display
+        },
     }
 })
 
 export default slice.reducer
-export const {cardOpen} = slice.actions              
+export const {cardOpen, burgerOpen, burgerClose} = slice.actions              

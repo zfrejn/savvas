@@ -1,11 +1,16 @@
 import React from 'react'
-import Logo from './Logo'
+import { useDispatch, useSelector } from 'react-redux'
+import { burgerClose } from '../../store/slice'
 import NavMenu from './NavMenu'
 
 const LeftPart = () => {
+
+    const display = useSelector(state => state.reducer.burger.display)
+    const dispatch = useDispatch()
+
     return (
-        <div className='leftPart'>
-            <Logo/>
+        <div className='leftPart' style={{display: `${display}`}}>
+            <div className='bttn' onClick={() => dispatch(burgerClose({state: 'close', display: 'none'}))}/>
             <NavMenu/>
         </div>
     )

@@ -13,16 +13,18 @@ body {
   position: fixed;  
   display: flex;
   flex-direction: column;
-  /* max-width: 260px; */
   width: 300px;
   background-color: #F9FAFC;
   height: 100vh;
+  padding-top: 20px;
+  z-index: 50;
 }
 
 .logoCont {
+  display: flex;
   height: 122px;
-  width: 100%; 
-  padding: 20px 10px 10px 56px;
+  width: fit-content; 
+  padding: 5px 10px 10px 56px;
 }
 
 .logo {
@@ -30,6 +32,19 @@ body {
   height: 45px;
   background-image: url('./img/logo2.svg');
   background-size: cover;
+}
+
+.openBtn {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  background-image: url('./img/btnImg/_base/Vector.png');
+  background-repeat: no-repeat;
+  border: none;
+  align-self: flex-start;
+  margin-top: 13px;
+  margin-left: 40px;
+  cursor: pointer;
 }
 
 .navMenu  {
@@ -63,16 +78,23 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   height: 95px;
   width: 100%;
-  max-width: 1837px;
-  padding: 16px 38px 19px 0;
   background-color: #fff;
+}
+
+.headerWrapper {
   display: flex;
-  justify-content: flex-end;
+  height: 95px;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1610px;
+  padding: 16px 68px 19px 0;
 }
 
 .buttons {
@@ -123,9 +145,10 @@ body {
 .cardList {
   display: flex;
   flex-wrap: wrap;
-  max-width: 2000px;
+  max-width: 1505px;
+  margin: 0 auto;
   height: fit-content;
-  padding: 100px 38px 0 310px;
+  padding-top: 100px;
 }
 
 .cardItem {
@@ -356,6 +379,20 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  .navBar {
+    color:#495057;
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  .leftPart {
+    width: 30%;
+  }
+
+  .navItem {
+    padding-left: 10px;
+  }
+
   .leftPart{
     display: none;
   }
@@ -366,7 +403,6 @@ body {
   }
   .cardList {
     padding: 0;
-    /* padding-top: 85px; */
     padding-top: 100px;
     width: 100vw;
     justify-content: center;
@@ -411,6 +447,17 @@ body {
 }
 
 @media screen and (max-width: 580px) {
+  .buttons {
+    display: none;
+  }
+
+  .headerWrapper {
+    justify-content: flex-start;
+  }
+
+  .logoCont {
+    padding-left: 10px;
+  }
 
   .cardItem {
     flex-direction: row;
@@ -464,5 +511,71 @@ body {
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .cardList {
+    width: fit-content;
+    justify-content: center;
+  }
+}
+
+.open {
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.closeBtn {
+  width: 100%;
+  align-self: center;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.bttn {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.bttn:before {
+  content: '+';
+  color: #337AB7;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(45deg);
+  font-size: 50px;
+  line-height: 1;
+  top: -5px;
+  left: 6px;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+
+.bttn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: #337AB7;
+  z-index: 1;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+  transform: scale(0.01);
+}
+
+.bttn:hover:after {
+  transform: scale(1);
+}
+
+.bttn:hover:before {
+  transform: scale(0.8) rotate(45deg);
+  color: #fff;
+}
 
 

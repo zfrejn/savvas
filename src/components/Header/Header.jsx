@@ -5,7 +5,11 @@ import Buttons from './Buttons'
 const Header = () => {
     return (
         <div className='header'>
-            <Buttons/>
+            <div className='headerWrapper'>
+                <Logo/>
+                <Buttons/>  
+            </div>
+            
         </div>
     )
 }
