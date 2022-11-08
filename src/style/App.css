@@ -389,11 +389,6 @@ body {
     padding-left: 10px;
   }
 
-  .leftPart{
-    height: 100vh;
-    width: 30%;
-  }
-
   .header {
     position: fixed;
     width: 100%;
@@ -445,6 +440,11 @@ body {
 }
 
 @media screen and (max-width: 580px) {
+
+  .cardList {
+    width: 100vw;
+  }
+
   .buttons {
     display: none;
   }

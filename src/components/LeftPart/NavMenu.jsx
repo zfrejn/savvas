@@ -6,7 +6,7 @@ const NavMenu = () => {
     return (
         <div className='navMenu'>
           <NavBar/>
-          <CompanyName name={'©2016-2022 Саввас'}/>
+          {/* <CompanyName name={'©2016-2022 Саввас'}/> */}
         </div>
     )
 }
