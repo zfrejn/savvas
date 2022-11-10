@@ -564,7 +564,8 @@ body {
   }
 
   .cardItem {
-    height: 120px;
+    height: 130px;
+    max-height: 150px;
   }
   .cardOpenPrice {
     width: 100%;
