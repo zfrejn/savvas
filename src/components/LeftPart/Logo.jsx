@@ -12,7 +12,7 @@ const Logo = () => {
           <Link to={'/'}>
             <div className='logo'></div>
           </Link>         
-          <button className='openBtn' onClick={() => dispatch(burgerOpen({state: 'open', display: 'block'}))}/>
+          <button className='openBtn' onClick={() => dispatch(burgerOpen({state: 'open', display: 'flex'}))}/>
         </div>
     )
 }

@@ -516,10 +516,10 @@ body {
   }
 }
 
-.open {
+/* .open {
   filter: blur(10px);
   pointer-events: none;
-}
+} */
 
 .closeBtn {
   width: 100%;
