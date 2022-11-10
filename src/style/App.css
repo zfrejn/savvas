@@ -236,10 +236,12 @@ body {
 .cardOpen {
   display: flex;
   flex-wrap: wrap;
-  width: fit-content;
+  min-width: fit-content;
+  max-width: 1610px;
   height: fit-content;
   background-color: #fff;
   padding-top: 100px;
+  padding-left: 35px;
   margin: 0 auto;
 }
 
@@ -380,6 +382,40 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1500px) {
+  .cardList {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+
+  .cardOpen {
+    padding-bottom: 250px;
+  }
+
+  .descriptionCardOpen {
+    width: 95%;
+  }
+
+  .cardOpenPrice {
+    bottom: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+  .cardOpenPrice {
+    width: 50%;
+  }
+
+  .priceBtns {
+    width: 100%;
+  }
+
+  .buyBtn, .commBtn {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 700px) {
 
   .leftPart {
@@ -393,7 +429,7 @@ body {
   }
 
   .navItem {
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   .header {
@@ -412,25 +448,17 @@ body {
     width: 100%;
   }
 
-  .cardOpen {
-    width: 100vw;
-    padding: 0;
-  }
-
   .cardOpenInfo {
     width: 100vw;
   }
 
   .cardOpenImg {
-    max-width: 400px;
+    background-position: 50% 50%;
+    margin-top: 10px;
   }
 
   .userInCardOpen {
     margin-bottom: 20px;
-  }
-
-  .cardOpenPrice {
-    width: 100%;
   }
 
   .priceBtns {
@@ -447,6 +475,20 @@ body {
 }
 
 @media screen and (max-width: 580px) {
+
+  .cardOpenImg {
+    height: 350px;
+  }
+
+  .titleCardOpen {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .cardOpen {
+    padding-left: 0;
+  }
+
   .companyName {
     font-size: 10px;
   }
@@ -508,8 +550,26 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+
+  .cardOpenImg {
+    height: 250px;
+  }
+
+  .tags {
+    margin-bottom: 0;
+  }
+  
+  .user {
+    margin-bottom: 0;
+  }
+
   .cardItem {
     height: 120px;
+  }
+  .cardOpenPrice {
+    width: 100%;
+    left: 0;
+    bottom: 0;
   }
 }
 
@@ -518,11 +578,14 @@ body {
     min-width: 50%;
   }
 
+  .cardOpenImg {
+    height: 200px;
+  }
 }
 
-@media screen and (max-width: 1500px) {
-  .cardList {
-    justify-content: center;
+@media screen and (max-width: 250px) {
+  .cardOpenImg {
+    height: 150px;
   }
 }
 
@@ -579,6 +642,10 @@ body {
 .bttn:hover:before {
   transform: scale(0.8) rotate(45deg);
   color: #fff;
+}
+
+.open {
+  pointer-events: none;
 }
 
 
