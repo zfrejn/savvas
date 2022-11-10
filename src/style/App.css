@@ -235,10 +235,11 @@ body {
 .cardOpen {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1400px;
+  width: fit-content;
   height: fit-content;
   background-color: #fff;
-  padding: 88px 38px 0 288px;
+  padding-top: 100px;
+  margin: 0 auto;
 }
 
 .cardOpenInfo {
@@ -442,7 +443,7 @@ body {
 @media screen and (max-width: 580px) {
 
   .cardList {
-    width: 100vw;
+    width: 100%;
   }
 
   .buttons {
@@ -507,19 +508,14 @@ body {
   .cardImage {
     min-width: 50%;
   }
+
 }
 
 @media screen and (max-width: 1500px) {
   .cardList {
-    width: fit-content;
     justify-content: center;
   }
 }
-
-/* .open {
-  filter: blur(10px);
-  pointer-events: none;
-} */
 
 .closeBtn {
   width: 100%;
