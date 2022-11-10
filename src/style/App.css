@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   width: 300px;
   background-color: #F9FAFC;
-  height: 100vh;
+  height: 100%;
   padding-top: 20px;
   z-index: 50;
 }
