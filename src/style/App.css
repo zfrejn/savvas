@@ -70,7 +70,8 @@ body {
 
 .companyName {
   color: #495057;
-  padding-left: 56px;
+  /* padding-left: 56px; */
+  margin: 0 auto;
   line-height: 33px;
   font-size: 14px;
   font-weight: 500;
@@ -380,6 +381,11 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+
+  .leftPart {
+    width: 40%;
+  }
+
   .navBar {
     color:#495057;
     font-size: 12px;
@@ -387,7 +393,7 @@ body {
   }
 
   .navItem {
-    padding-left: 10px;
+    padding-left: 30px;
   }
 
   .header {
@@ -441,6 +447,9 @@ body {
 }
 
 @media screen and (max-width: 580px) {
+  .companyName {
+    font-size: 10px;
+  }
 
   .cardList {
     width: 100%;
