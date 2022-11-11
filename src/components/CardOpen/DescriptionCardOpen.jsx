@@ -3,7 +3,7 @@ import React from 'react'
 const DescriptionCardOpen = ({desription}) => {
     return(
         <p className='descriptionCardOpen'>
-            {desription} 
+               {desription}        
         </p>
     )
 }

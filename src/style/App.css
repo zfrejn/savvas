@@ -332,6 +332,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #212529;
+  white-space: normal;
 }
 
 .tags {
@@ -341,6 +342,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #212529;
+  white-space: pre-line;
   margin-bottom: 26px;
 }
 
