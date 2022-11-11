@@ -236,7 +236,7 @@ body {
 .cardOpen {
   display: flex;
   flex-wrap: wrap;
-  min-width: fit-content;
+  /* min-width: fit-content; */
   max-width: 1610px;
   height: fit-content;
   background-color: #fff;
@@ -314,6 +314,7 @@ body {
   height: 468px;
   width: 100%;
   background-size: cover;
+  background-position: 50% 50%;
 }
 
 .descriptionTitle {
@@ -549,7 +550,24 @@ body {
   }
 }
 
+@media screen and (max-width: 500px) {
+
+  .cardOpenImg {
+    height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .cardOpenImg {
+    height: 200px;
+  }
+
+}
+
 @media screen and (max-width: 400px) {
+
 
   .cardOpenImg {
     height: 250px;
@@ -574,6 +592,22 @@ body {
   }
 }
 
+@media screen and (max-width: 380px) {
+
+  .cardOpenImg {
+    height: 240px;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .cardOpenImg {
+    height: 200px;
+  }
+
+}
+
 @media screen and (max-width: 330px) {
   .cardImage {
     min-width: 50%;
@@ -584,10 +618,34 @@ body {
   }
 }
 
+@media screen and (max-width: 300px) {
+
+  .cardOpenImg {
+    height: 170px;
+  }
+
+}
+
 @media screen and (max-width: 250px) {
   .cardOpenImg {
     height: 150px;
   }
+}
+
+@media screen and (max-width: 230px) {
+
+  .cardOpenImg {
+    height: 120px;
+  }
+
+}
+
+@media screen and (max-width: 200px) {
+
+  .cardOpenImg {
+    height: 100px;
+  }
+
 }
 
 .closeBtn {
