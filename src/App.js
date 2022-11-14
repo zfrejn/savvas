@@ -4,6 +4,7 @@ import Layout from './components/Layout/Layout';
 import { Route, Routes } from 'react-router-dom';
 import CardOpen from './components/CardOpen/CardOpen';
 import { useSelector } from 'react-redux';
+import AuthorForm from './components/Authorization/AuthorForm';
 
 function App() {
 
@@ -24,7 +25,8 @@ function App() {
               name={card.user.name}  
               img={card.img}      
               userImg={card.user.img}     
-            />}/>
+          />}/>
+          <Route path='/authorization' element={<AuthorForm/>}/>
         </Route>
       </Routes>
     </div>
