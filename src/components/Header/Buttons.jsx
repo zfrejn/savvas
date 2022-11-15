@@ -5,7 +5,7 @@ const Buttons = () => {
     return (
         <div className='buttons'>
           <Link className='link' to='/authorization'><button className='input'>Войти</button></Link>
-          <Link className='link' to='/'><button className='login'>Регистрация</button></Link>
+          <Link className='link' to='/registration'><button className='login'>Регистрация</button></Link>
         </div>
     )
 }

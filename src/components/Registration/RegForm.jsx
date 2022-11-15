@@ -1,7 +1,7 @@
 import React from 'react'
 
-const AuthorForm = () => {
-    return (  
+const RegForm = () => {
+    return (
         <form className='authorForm'>
             <div className="mb-3">
                 <label className="form-label">Email</label>
@@ -17,8 +17,8 @@ const AuthorForm = () => {
                 <label className="form-check-label">Соглашаюсь</label>
             </div>
             <button type="submit" className="btn btn-primary">Войти</button>
-        </form>  
+        </form>   
     )
 }
 
-export default AuthorForm
+export default RegForm
