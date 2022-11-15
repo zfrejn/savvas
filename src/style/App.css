@@ -260,6 +260,7 @@ body {
 }
 
 .cardOpenPrice {
+  z-index: 3;
   position: fixed;
   display: flex;
   flex-direction: column;
