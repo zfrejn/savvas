@@ -5,7 +5,6 @@ import AuthorTitle from './AuthorTitle'
 const AuthorPage = () => {
     return (
         <div className='authorization'>
-            <AuthorTitle title={'Авторизация'}/>
             <AuthorForm/>
         </div>
     )

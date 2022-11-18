@@ -468,6 +468,133 @@ footer {
   font-size: 14px;
 }
 
+.closeBtn {
+  width: 100%;
+  align-self: center;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+}
+
+.open {
+  pointer-events: none;
+}
+
+.authorization {
+  width: 100%;
+  height: 100vh;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E5E5E5;
+}
+
+.authorForm {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 400px;
+  height: 620px;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 200px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+  padding: 50px 35px 50px 40px;
+}
+
+.loginTitle {
+  color: #0A2533;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.loginInp {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 16px;
+  background: #F2F3F8;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+}
+
+.loginInpWrapp {
+  width: 100%;
+  height: fit-content;
+  margin-top: 30px;
+}
+
+.loginBtn {
+  width: 100%;
+  height: 48px;
+  color: white;
+  border: none;
+  background: #7E6DEC;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.reesPassword {
+  align-self: flex-end;
+  font-size: 14px;
+  line-height: 20px;
+  color: #848F99;
+  margin-bottom: 12px;
+}
+
+.addProfLink {
+  display: flex;
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 23px;
+}
+
+.addProfDesc {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #0A2533;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  margin-right: 10px;
+}
+
+.addProfileLink {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #685AC9;
+  margin: 0;
+  width: fit-content;
+  padding: 0;
+}
+
+.loginBtnWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.iSkill {
+  margin-bottom: 16px;
+}
+
+.iSkill, .iCompany {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background: #343A40;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
 
 @media screen and (max-width: 1500px) {
   .cardList {
@@ -671,6 +798,16 @@ footer {
 
 @media screen and (max-width: 400px) {
 
+  .addProfLink {
+    display: block;
+  }
+
+  .authorForm {
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
   .cardOpenImg {
     height: 250px;
   }
@@ -762,116 +899,3 @@ footer {
   }
 
 }
-
-.closeBtn {
-  width: 100%;
-  align-self: center;
-  height: 30px;
-  margin-bottom: 20px;
-  border: 1px solid gray;
-}
-
-.open {
-  pointer-events: none;
-}
-
-.authorization {
-  padding-top: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 500px;
-}
-
-.authorForm {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.authorTitle {
-  width: 80%;
-  text-align: center;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-/* footer {
-  display: flex;
-  width: 100%;
-  min-height: 100px;
-  max-height: 600px;
-  background-color: #0F141C;
-  justify-content: center;
-}
-
-.footerWrap {
-  display: flex;
-  width: 1550px;
-  max-width: 1500px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footerLogo {
-  width: 68px;
-  height: 20px;
-  background-image: url('./img/footerlogo.png');
-}
-
-.footerNav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 300px;
-  height: 100px;
-}
-
-.footerNavItem {
-  color: white;
-  font-size: 14px;
-}
-
-.footerInput {
-  font-size: 12px;
-  line-height: 46px;
-  color: #969696;
-  padding: 0 10px 0 10px;
-  border: none;
-  height: 30px;
-  width: 270px;
-  max-width: 270px;
-  background-color: #2B2E32;
-  border-radius: 3px;
-}
-
-.footerInput:focus {
-  outline: 0;
-  outline-offset: 0;
-}
-
-.footerBtn {
-  font-size: 12px;
-  width: 110px;
-  height: 30px;
-  margin-left: 20px;
-  color: white;
-  border-radius: 3px;
-  background-color: #262729;
-  border: none;
-}
-
-.companyNameFooter {
-  width: 163px;
-  height: 46px;
-  line-height: 46px;
-  color: #A4A4A4;
-  font-size: 14px;
-} */
-
-
-
-
-

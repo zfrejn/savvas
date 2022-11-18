@@ -3,20 +3,24 @@ import React from 'react'
 const AuthorForm = () => {
     return (  
         <form className='authorForm'>
-            <div className="mb-3">
-                <label className="form-label">Email</label>
-                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Введите email...'/>
-                <div id="emailHelp" className="form-text">Обязательное поле</div>
+            <p className='loginTitle'>
+                Пожалуйста войдите.
+            </p>
+            <div className="loginInpWrapp">
+                <input className='loginInp' placeholder='Email'></input>    
+                <input className='loginInp' placeholder='Пароль' type='password'></input>   
+                <button className='loginBtn'>Продолжить</button> 
             </div>
-            <div className="mb-3">
-                <label className="form-label">Пароль</label>
-                <input type="password" className="form-control" id="exampleInputPassword1" placeholder='Введите пароль...'/>
+            <p className='reesPassword'>Восстановить пароль</p>
+            <hr/>
+            <div className="addProfLink">
+                <p className='addProfDesc'>Еще не в Сейвер?</p>
+                <p className='addProfileLink'>Добавить профиль:</p>
             </div>
-            <div className="mb-3 form-check">
-                <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-                <label className="form-check-label">Соглашаюсь</label>
+            <div className="loginBtnWrap">
+                <button className='iSkill'>Я талант</button>
+                <button className='iCompany'>Я компания</button>
             </div>
-            <button type="submit" className="btn btn-primary">Войти</button>
         </form>  
     )
 }
