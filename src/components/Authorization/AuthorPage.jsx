@@ -1,6 +1,5 @@
 import React from 'react'
 import AuthorForm from './AuthorForm'
-import AuthorTitle from './AuthorTitle'
 
 const AuthorPage = () => {
     return (

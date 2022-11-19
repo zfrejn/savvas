@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { Route, Routes } from 'react-router-dom'
 import AuthorPage from '../components/Authorization/AuthorPage'
+import ReesPasswordPage from '../components/Authorization/ReesPasswordPage/ReesPasswordPage'
 import CardList from '../components/CardList/CardList'
 import CardOpen from '../components/CardOpen/CardOpen'
 import Layout from '../components/Layout/Layout'
@@ -28,6 +29,7 @@ const MyRoutes = () => {
                     />}/>
                 <Route path='/authorization' element={<AuthorPage/>}/>
                 <Route path='/registration' element={<RegPage/>}/>
+                <Route path='/reesPassword' element={<ReesPasswordPage/>}/>
             </Route>
         </Routes>
     )
