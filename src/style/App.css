@@ -482,7 +482,8 @@ footer {
 
 .authorization {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 'fit-content';
   min-height: 900px;
   display: flex;
   flex-direction: column;
@@ -972,4 +973,50 @@ footer {
   margin-bottom: 66px;
 }
 
+.regDesc {
+  font-size: 14px;
+  line-height: 22px;
+  color: #0A2533;
+  width: 100%;
+  max-width: 290px;
+  margin-bottom: 44px;
+}
 
+.checkBox {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 27px;
+}
+
+.checkBoxDesc {
+  width: fit-content;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A0A3BD;
+  max-width: 280px;
+}
+
+.checkBoxReg {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  margin-right: 11px;
+}
+
+.agree {
+  color: #0071C9;
+}
+
+.loginInReg {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0A2533;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.loginLink {
+  color: #685AC9;
+  margin-left: 12px;
+}
