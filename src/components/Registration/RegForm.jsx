@@ -10,12 +10,12 @@ const RegForm = () => {
     return (
         <form className='authorForm' style={{minHeight: '810px'}}>
             <LoginTitle title={'Регистрация компании'}/>
-            <RegDesc text={'Создайте страничку работодателя для найма талантов и продвижения HR-бренда'}/>
+            {/* <RegDesc text={'Создайте страничку работодателя для найма талантов и продвижения HR-бренда'}/> */}
             <RegInputs/>
             <RegCheckBox/>
             <LoginButton text={'Создать профиль'}/>
             <p className='loginInReg'>
-                Уже в CANVAS? <Link to='/authorization' className='cardLink'><span className='loginLink'>Войти</span></Link>
+                Уже в SAVVAS? <Link to='/authorization' className='cardLink'><span className='loginLink'>Войти</span></Link>
             </p>
         </form>   
     )

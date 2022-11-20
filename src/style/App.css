@@ -431,6 +431,11 @@ footer {
   font-size: 14px;
 }
 
+.footerNavItem:hover {
+  /* font-size: 14.3px; */
+  padding-bottom: 5px;
+}
+
 .footerInput {
   font-size: 12px;
   line-height: 46px;
@@ -581,6 +586,12 @@ footer {
   width: 100%;
 }
 
+.loginTitle {
+  padding-bottom: 30px;
+}
+
+.regInputs
+
 .iSkill {
   margin-bottom: 16px;
 }
@@ -597,9 +608,14 @@ footer {
   line-height: 24px;
 }
 
+
 @media screen and (max-width: 1500px) {
   .cardList {
     justify-content: center;
+  }
+  .footerWrap {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -618,6 +634,7 @@ footer {
   .descriptionCardOpen {
     width: 95%;
   }
+
 
   .cardOpenPrice {
     bottom: 10px;
@@ -907,7 +924,9 @@ footer {
   border-radius: 40px;
   position: relative;
   z-index: 1;
-  margin: 20px auto;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 .bttn:before {
