@@ -13,7 +13,7 @@ const AuthorForm = () => {
             <ReesPassword/>
             <hr/>
             <AddProfLink/>
-            <LoginBtns/>
+            {/* <LoginBtns/> */}
         </form>  
     )
 }

@@ -608,6 +608,187 @@ footer {
   line-height: 24px;
 }
 
+.bttn {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.bttn:before {
+  content: '+';
+  color: #337AB7;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(45deg);
+  font-size: 50px;
+  line-height: 1;
+  top: -5px;
+  left: 6px;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.bttn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: #337AB7;
+  z-index: 1;
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+  transform: scale(0.01);
+}
+.bttn:hover:after {
+  transform: scale(1);
+}
+.bttn:hover:before {
+  transform: scale(0.8) rotate(45deg);
+  color: #fff;
+}
+
+.emailTitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+  width: fit-content;
+  align-self: center;
+  margin-top: 43px;
+}
+
+.reesInp {
+  width: 100%;
+  height: 48px;
+  background: #F2F3F8;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+}
+
+.reesDesc {
+  align-self: center;
+  width: fit-content;
+  text-align: center;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6C757D;
+  margin-bottom: 66px;
+}
+
+.regDesc {
+  font-size: 14px;
+  line-height: 22px;
+  color: #0A2533;
+  width: 100%;
+  max-width: 290px;
+  margin-bottom: 44px;
+}
+
+.checkBox {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 27px;
+}
+
+.checkBoxDesc {
+  width: fit-content;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A0A3BD;
+  max-width: 280px;
+}
+
+.checkBoxReg {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  margin-right: 11px;
+}
+
+.agree {
+  color: #0071C9;
+}
+
+.loginInReg {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0A2533;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.loginLink {
+  color: #685AC9;
+  margin-left: 12px;
+}
+
+.cardSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+  max-width: 270;
+  min-width: 200px;
+  margin-right: 10px;
+}
+
+.searchInput {
+  width: 200px;
+  max-width: 190px;
+  min-width: 100px;
+  height: 40px;
+  background: #F2F3F8;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 8px;
+  border: none;
+  border: 2px solid #fe6637;
+  outline: none;
+}
+
+.searchInput:focus, .searchInput:hover {
+  border-color: blue;
+}
+
+.searchBtn {
+  text-decoration: none;
+  display: inline-block;
+  height: 40px;
+  width: 70px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fe6637;
+  transition: .2s ease-in-out;
+}
+.searchBtn:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.searchBtn:hover {
+  background: #fe6637;
+  color: #fff;
+}
+.searchBtn:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
 
 @media screen and (max-width: 1500px) {
   .cardList {
@@ -651,6 +832,17 @@ footer {
 
   .buyBtn, .commBtn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .buttons {
+    display: none;
+  }
+
+  .searchBtn {
+    margin-left: 10px;
+    min-width: 70px;
   }
 }
 
@@ -795,6 +987,15 @@ footer {
   }
 }
 
+@media screen and (max-width: 470px) {
+  .cardSearch {
+    min-width: 150px;
+  }
+  .searchInput {
+    min-width: 80px;
+  }
+}
+
 @media screen and (max-width: 450px) {
 
   .cardOpenImg {
@@ -812,6 +1013,20 @@ footer {
     width: 200px;
   }
 
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    width: 125px;
+    height: 35px;
+  }
+  .openBtn {
+    margin-left: 20px;
+  }
+
+  .logoCont {
+    padding-top: 15px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -855,6 +1070,23 @@ footer {
     height: 240px;
   }
 
+}
+
+@media screen and (max-width: 370px) {
+  .logo {
+    width: 100px;
+    height: 29px;
+  }
+  .openBtn {
+    margin-left: 20px;
+    margin-top: 8px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .searchBtn {
+    margin-left: 5px;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -918,124 +1150,3 @@ footer {
 
 }
 
-.bttn {
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  position: relative;
-  z-index: 1;
-  align-self: flex-end;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-.bttn:before {
-  content: '+';
-  color: #337AB7;
-  position: absolute;
-  z-index: 2;
-  transform: rotate(45deg);
-  font-size: 50px;
-  line-height: 1;
-  top: -5px;
-  left: 6px;
-  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
-}
-.bttn:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  background: #337AB7;
-  z-index: 1;
-  transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
-  transform: scale(0.01);
-}
-.bttn:hover:after {
-  transform: scale(1);
-}
-.bttn:hover:before {
-  transform: scale(0.8) rotate(45deg);
-  color: #fff;
-}
-
-.emailTitle {
-  font-size: 16px;
-  line-height: 24px;
-  color: #212529;
-  width: fit-content;
-  align-self: center;
-  margin-top: 43px;
-}
-
-.reesInp {
-  width: 100%;
-  height: 48px;
-  background: #F2F3F8;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  padding: 8px 12px;
-}
-
-.reesDesc {
-  align-self: center;
-  width: fit-content;
-  text-align: center;
-  margin-top: 4px;
-  font-size: 12px;
-  line-height: 18px;
-  color: #6C757D;
-  margin-bottom: 66px;
-}
-
-.regDesc {
-  font-size: 14px;
-  line-height: 22px;
-  color: #0A2533;
-  width: 100%;
-  max-width: 290px;
-  margin-bottom: 44px;
-}
-
-.checkBox {
-  margin-top: 40px;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 27px;
-}
-
-.checkBoxDesc {
-  width: fit-content;
-  font-size: 12px;
-  line-height: 16px;
-  color: #A0A3BD;
-  max-width: 280px;
-}
-
-.checkBoxReg {
-  width: 20px;
-  height: 20px;
-  border-radius: 0;
-  margin-right: 11px;
-}
-
-.agree {
-  color: #0071C9;
-}
-
-.loginInReg {
-  font-size: 16px;
-  line-height: 24px;
-  color: #0A2533;
-  align-self: flex-end;
-  margin-top: 20px;
-}
-
-.loginLink {
-  color: #685AC9;
-  margin-left: 12px;
-}
