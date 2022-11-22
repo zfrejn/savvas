@@ -902,6 +902,14 @@ footer {
   }
 }
 
+@media screen and (max-width: 591px) {
+  .cardList {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 580px) {
 
   .cardOpenImg {
@@ -922,6 +930,8 @@ footer {
   }
 
   .cardList {
+    flex-direction: column;
+    justify-content: start;
     width: 100%;
     margin-bottom: 20px;
   }
