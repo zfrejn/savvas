@@ -4,7 +4,7 @@ import Card from './Card'
 
 const CardList = () => {
 
-    const cards = useSelector(state => state.reducer.cards)
+    const cards = useSelector(state => state.reducer.categoryCards)
 
     return (
         <ul className='cardList'>

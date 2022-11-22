@@ -7,26 +7,48 @@ const slice = createSlice({
     initialState: {
         // Наполнение карточек
         cards: [
-            {id: 1, name: 'Александр Соколов', nick: '@sokol', price: '150 000₽', text: 'Я буду вашим React JS Frontend разработчиком', userImg: imgs.react.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.python.description},
-            {id: 3, name: 'SAVVAS', nick: '@savvas ', price: 'от 100 000₽', text: 'Станьте бизнес партнером SAVVAS', userImg: imgs.python.user, cardImg: imgs.savvas.description},
-            {id: 4, name: 'Health', nick: '@Health', price: 'от 100 000₽', text: 'Investment in Health-marketplace in Indonesia', userImg: imgs.python.user, cardImg: imgs.fourCard.description},
-            {id: 5, name: 'Акимов Александр', nick: '@akimov ', price: 'от 100 000₽', text: 'Я разработаю UI UX дизайн для мобильного приложения и веб-сайта с помощью Figma ', userImg: imgs.python.user, cardImg: imgs.fiveCard.description},
-            {id: 6, name: 'Марковин Андрей', nick: '@frontend ', price: 'от 100 000₽', text: 'Я создам адаптивный дизайн сайта с использованием HTML CSS JS Bootstrap ', userImg: imgs.python.user, cardImg: imgs.sixCard.description},
-            {id: 7, name: 'Яна Яковлева', nick: '@yana ', price: 'от 100 000₽', text: 'Я найду вам backend разработчика за 72 часа', userImg: imgs.python.user, cardImg: imgs.sevenCard.description},
-            {id: 8, name: 'SAVVAS', nick: '@savvas', price: 'от 100 000₽', text: 'Я капитализирую ваши инвестиции в Classified и HRTech', userImg: imgs.python.user, cardImg: imgs.eightCard.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
-            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description},
+            {id: 1, name: 'Александр Соколов', nick: '@sokol', price: '150 000₽', text: 'Я буду вашим React JS Frontend разработчиком', userImg: imgs.react.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.python.description, category: 'IT'},
+            {id: 3, name: 'SAVVAS', nick: '@savvas ', price: 'от 100 000₽', text: 'Станьте бизнес партнером SAVVAS', userImg: imgs.python.user, cardImg: imgs.savvas.description, category: 'Маркетинг'},
+            {id: 4, name: 'Health', nick: '@Health', price: 'от 100 000₽', text: 'Investment in Health-marketplace in Indonesia', userImg: imgs.python.user, cardImg: imgs.fourCard.description, category: 'Маркетинг'},
+            {id: 5, name: 'Акимов Александр', nick: '@akimov ', price: 'от 100 000₽', text: 'Я разработаю UI UX дизайн для мобильного приложения и веб-сайта с помощью Figma', userImg: imgs.python.user, cardImg: imgs.fiveCard.description, category: 'IT'},
+            {id: 6, name: 'Марковин Андрей', nick: '@frontend ', price: 'от 100 000₽', text: 'Я создам адаптивный дизайн сайта с использованием HTML CSS JS Bootstrap ', userImg: imgs.python.user, cardImg: imgs.sixCard.description, category: 'IT'},
+            {id: 7, name: 'Яна Яковлева', nick: '@yana ', price: 'от 100 000₽', text: 'Я найду вам backend разработчика за 72 часа', userImg: imgs.python.user, cardImg: imgs.sevenCard.description, category: 'IT'},
+            {id: 8, name: 'SAVVAS', nick: '@savvas', price: 'от 100 000₽', text: 'Я капитализирую ваши инвестиции в Classified и HRTech', userImg: imgs.python.user, cardImg: imgs.eightCard.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+        ],
+        categoryCards: [
+            {id: 1, name: 'Александр Соколов', nick: '@sokol', price: '150 000₽', text: 'Я буду вашим React JS Frontend разработчиком', userImg: imgs.react.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.python.description, category: 'IT'},
+            {id: 3, name: 'SAVVAS', nick: '@savvas ', price: 'от 100 000₽', text: 'Станьте бизнес партнером SAVVAS', userImg: imgs.python.user, cardImg: imgs.savvas.description, category: 'Маркетинг'},
+            {id: 4, name: 'Health', nick: '@Health', price: 'от 100 000₽', text: 'Investment in Health-marketplace in Indonesia', userImg: imgs.python.user, cardImg: imgs.fourCard.description, category: 'Маркетинг'},
+            {id: 5, name: 'Акимов Александр', nick: '@akimov ', price: 'от 100 000₽', text: 'Я разработаю UI UX дизайн для мобильного приложения и веб-сайта с помощью Figma', userImg: imgs.python.user, cardImg: imgs.fiveCard.description, category: 'IT'},
+            {id: 6, name: 'Марковин Андрей', nick: '@frontend ', price: 'от 100 000₽', text: 'Я создам адаптивный дизайн сайта с использованием HTML CSS JS Bootstrap ', userImg: imgs.python.user, cardImg: imgs.sixCard.description, category: 'IT'},
+            {id: 7, name: 'Яна Яковлева', nick: '@yana ', price: 'от 100 000₽', text: 'Я найду вам backend разработчика за 72 часа', userImg: imgs.python.user, cardImg: imgs.sevenCard.description, category: 'IT'},
+            {id: 8, name: 'SAVVAS', nick: '@savvas', price: 'от 100 000₽', text: 'Я капитализирую ваши инвестиции в Classified и HRTech', userImg: imgs.python.user, cardImg: imgs.eightCard.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
+            {id: 2, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.react.description, category: 'IT'},
         ],
         // Наполнение открытых карточек
         cardsOpen: [
@@ -273,8 +295,11 @@ const slice = createSlice({
             state.burger.state = action.payload.state
             state.burger.display = action.payload.display
         },
+        filterCards(state, action) {
+            state.categoryCards = state.cards.filter(item => item.category == action.payload)
+        }
     }
 })
 
 export default slice.reducer
-export const {cardOpen, burgerOpen, burgerClose} = slice.actions              
+export const {cardOpen, burgerOpen, burgerClose, filterCards} = slice.actions              
