@@ -8,7 +8,7 @@ const CardOpen = ({price, title, desription, tags, nick, name, img, userImg}) =>
         <div className='cardOpen'>
             <CardOpenInfo 
                 title={title}
-                // descTitle={'Описание'}
+                descTitle={'Описание'}
                 desription={desription} 
                 tags={tags} 
                 nick={nick}

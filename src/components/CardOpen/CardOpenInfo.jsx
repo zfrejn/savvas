@@ -11,9 +11,9 @@ const CardOpenInfo = ({title, descTitle, desription, tags, nick, name, img, user
         <div className='cardOpenInfo'>
             <TitleCardOpen text={title}/>
             <CardOpenImg img={img}/>
-            <DescriptionTitle text={descTitle}/>
-            <DescriptionCardOpen desription={desription}/>
-            <Tags tags={tags}/>
+            {/* <DescriptionTitle text={descTitle}/> */}
+            {false || <DescriptionCardOpen desription={desription}/>}
+            {false || <Tags tags={tags}/>}
             <UserInCardOpen nick={nick} name={name} img={userImg}/>
         </div>
     )
