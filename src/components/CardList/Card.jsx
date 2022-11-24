@@ -15,8 +15,7 @@ const Card = ({name, nick, price, text, id, userImg, cardImg}) => {
         <li className='cardItem'>
           <CardImage img={cardImg}/>
             <User name={name} nick={nick} userImg={userImg}/>
-            <CardInfo price={price} text={text}/>  
-                  
+            <CardInfo price={price} text={text}/>      
         </li> 
       </Link> 
             

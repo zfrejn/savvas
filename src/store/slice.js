@@ -488,6 +488,7 @@ const slice = createSlice({
         },
         cardSearcher(state, action) {
             state.cardSearch = action.payload
+            state.categoryCards = state.cards.filter(item => item.text.includes(action.payload))
         }
     }
 })

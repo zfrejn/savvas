@@ -145,12 +145,11 @@ body {
 .cardList {
   display: flex;
   flex-wrap: wrap;
-  min-height: 1400px;
   max-width: 1570px;
   margin: 0 auto;
   height: fit-content;
   padding-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 600px;
 }
 
 .cardItem {
