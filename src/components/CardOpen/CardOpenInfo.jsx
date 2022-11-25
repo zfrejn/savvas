@@ -9,8 +9,13 @@ import UserInCardOpen from './UserInCardOpen'
 const CardOpenInfo = ({title, descTitle, desription, tags, nick, name, img, userImg}) => {
     return (
         <div className='cardOpenInfo'>
-            <TitleCardOpen text={title}/>
             <CardOpenImg img={img}/>
+            <div className="dopImg">
+                <div className="dopImgItem"/>
+                <div className="dopImgItem"/>
+                <div className="dopImgItem"/>
+            </div>
+            <TitleCardOpen text={title}/>
             {/* <DescriptionTitle text={descTitle}/> */}
             {false || <DescriptionCardOpen desription={desription}/>}
             {false || <Tags tags={tags}/>}

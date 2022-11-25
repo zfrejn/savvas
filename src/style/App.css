@@ -304,14 +304,12 @@ body {
 }
 
 .titleCardOpen {
-  min-height: 70px;
-  width: 100%;
-  text-align: start;
-  padding-top: 30px;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 19px;
-  color: #495057;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  margin-top: 25px;
+  height: fit-content;
+  color: #212529;
 }
 
 .cardOpenImg {
@@ -319,6 +317,20 @@ body {
   width: 100%;
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.dopImg {
+  margin-top: 15px;
+  width: 345px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dopImgItem {
+  width: 100px;
+  height: 70px;
+  background: #D9D9D9;
 }
 
 .descriptionTitle {

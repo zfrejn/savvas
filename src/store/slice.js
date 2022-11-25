@@ -15,18 +15,18 @@ const slice = createSlice({
             {id: 6, name: 'Марковин Андрей', nick: '@frontend ', price: 'от 100 000₽', text: 'Я создам адаптивный дизайн сайта с использованием HTML CSS JS Bootstrap ', userImg: imgs.python.user, cardImg: imgs.sixCard.description, category: 'Услуги'},
             {id: 7, name: 'Яна Яковлева', nick: '@yana ', price: 'от 100 000₽', text: 'Я найду вам backend разработчика за 72 часа', userImg: imgs.python.user, cardImg: imgs.sevenCard.description, category: 'Услуги'},
             {id: 8, name: 'SAVVAS', nick: '@savvas', price: 'от 100 000₽', text: 'Я капитализирую ваши инвестиции в Classified и HRTech', userImg: imgs.python.user, cardImg: imgs.eightCard.description, category: 'Услуги'},
-            {id: 9, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.nineCard.description, category: 'Финансы'},
-            {id: 10, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.tenCard.description, category: 'Маркетинг'},
-            {id: 11, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.elevenCard.description, category: 'Здоровье'},
-            {id: 12, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.twelveCard.description, category: 'Здоровье'},
-            {id: 13, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.thirteenCard.description, category: 'Производство'},
-            {id: 14, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.fourteenCard.description, category: 'Маркетинг'},
-            {id: 15, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.fifteenCard.description, category: 'Услуги'},
-            {id: 16, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.sixteenCard.description, category: 'Услуги'},
-            {id: 17, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.seventeenCard.description, category: 'Бизнес'},
-            {id: 18, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.eighteenCard.description, category: 'Услуги'},
-            {id: 19, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.nineteenCard.description, category: 'IT'},
-            {id: 20, name: 'Алексей Комков', nick: '@devpython', price: 'от 100 000₽', text: 'Я выполню ваши задачи по разработке на Python', userImg: imgs.python.user, cardImg: imgs.twentyCard.description, category: 'Финансы'},
+            {id: 9, name: 'P2P Lending ', nick: '@p2plending ', price: 'от 100 000₽', text: 'Станьте бизнес партнером PeerLending', userImg: imgs.python.user, cardImg: imgs.nineCard.description, category: 'Финансы'},
+            {id: 10, name: 'Stalker', nick: '@stalker', price: 'от 100 000₽', text: 'Я напишу сценарий вашего мероприятия или фильма', userImg: imgs.python.user, cardImg: imgs.tenCard.description, category: 'Маркетинг'},
+            {id: 11, name: 'Сергей Brummi', nick: '@brummi', price: 'от 100 000₽', text: 'Академический бокс оздоровительной направленности', userImg: imgs.python.user, cardImg: imgs.elevenCard.description, category: 'Здоровье'},
+            {id: 12, name: 'I2Life', nick: '@i2life', price: 'от 100 000₽', text: 'Органический йод Iodine + Collagen', userImg: imgs.python.user, cardImg: imgs.twelveCard.description, category: 'Здоровье'},
+            {id: 13, name: 'AL27', nick: '@al27', price: 'от 100 000₽', text: 'Изготовление и монтаж светопрозрачных конструкций', userImg: imgs.python.user, cardImg: imgs.thirteenCard.description, category: 'Производство'},
+            {id: 14, name: 'СОКУР И ПАРТНЕРЫ', nick: '@sokurpr', price: 'от 100 000₽', text: 'Мы помогаем улучшить работу компании с сообществами', userImg: imgs.python.user, cardImg: imgs.fourteenCard.description, category: 'Маркетинг'},
+            {id: 15, name: 'ОсобенноВкусно', nick: '@osobennovkusno', price: 'от 100 000₽', text: 'Выездной ресторан харизматичного московского шеф-повара Алексея Орлова-Савельева.', userImg: imgs.python.user, cardImg: imgs.fifteenCard.description, category: 'Услуги'},
+            {id: 16, name: 'Алан Баллаев', nick: '@alan', price: 'от 100 000₽', text: 'Я найду вам Frontend-разработчика за 72 часа.', userImg: imgs.python.user, cardImg: imgs.sixteenCard.description, category: 'Услуги'},
+            {id: 17, name: 'Health', nick: '@health.id', price: 'от 100 000₽', text: 'I capitalize your investment in Digital Health', userImg: imgs.python.user, cardImg: imgs.seventeenCard.description, category: 'Бизнес'},
+            {id: 18, name: 'Saveer ', nick: '@saveer', price: 'от 100 000₽', text: 'Я найду вам маркетолога, для уменьшения стоимости лида', userImg: imgs.python.user, cardImg: imgs.eighteenCard.description, category: 'Услуги'},
+            {id: 19, name: 'Saveer ', nick: '@saveer', price: 'от 100 000₽', text: 'Мы разработаем HRTech решение для вашего сообщества', userImg: imgs.python.user, cardImg: imgs.nineteenCard.description, category: 'IT'},
+            {id: 20, name: 'Алан Баллаев', nick: '@alan', price: 'от 100 000₽', text: 'Капитализирую HRTech практику вашего VC', userImg: imgs.python.user, cardImg: imgs.twentyCard.description, category: 'Финансы'},
         ],
         categoryCards: [
             {id: 1, name: 'Александр Соколов', nick: '@sokol', price: '150 000₽', text: 'Я буду вашим React JS Frontend разработчиком', userImg: imgs.react.user, cardImg: imgs.react.description, category: 'Услуги'},
@@ -488,7 +488,7 @@ const slice = createSlice({
         },
         cardSearcher(state, action) {
             state.cardSearch = action.payload
-            state.categoryCards = state.cards.filter(item => item.text.includes(action.payload))
+            state.categoryCards = state.cards.filter(item => item.text.toLowerCase().includes(action.payload.toLowerCase()))
         }
     }
 })
