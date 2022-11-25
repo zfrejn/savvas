@@ -263,11 +263,8 @@ body {
   position: fixed;
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 205px;
-  background-color: #D9D9D9;
-  border-radius: 14px;
-  padding: 30px 10px 10px 10px;
+  width: 400px;
+  height: fit-content;
 }
 
 .price {
@@ -282,25 +279,35 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 297px;
+  width: 100%;
   height: 116px;
-  margin-top: 18px;
 }
 
 .buyBtn, .commBtn {
-  width: 297px;
+  width: 400px;
   height: 53px;
-  background-color: #F9F6F6;
   border-radius: 9px;
-  color: #212529;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   border: none;
 }
 
-.buyBtn:hover, .commBtn:hover {
-  background-color: #ebebee;
+.buyBtn {
+  background: #0088FF;
+}
+
+.commBtn {
+  background: #495057;
+}
+
+.buyBtn:hover {
+  background: #495057;
+}
+
+.commBtn:hover {
+  background: #0088FF;
 }
 
 .titleCardOpen {
@@ -1168,4 +1175,5 @@ footer {
   }
 
 }
+
 

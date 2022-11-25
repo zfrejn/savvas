@@ -6,7 +6,7 @@ const CardOpenPrice = ({price}) => {
     return(
         <div className='wrapper'>
           <div className='cardOpenPrice'>
-            <Price price={price}/>
+            {/* <Price price={price}/> */}
             <PriceBtns/>
           </div>  
         </div>
