@@ -1169,11 +1169,11 @@ footer {
 }
 
 @media screen and (max-width: 200px) {
-
   .cardOpenImg {
-    height: 100px;
-  }
 
+    height: 100px;
+    
+  }
 }
 
 
