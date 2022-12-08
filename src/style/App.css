@@ -28,9 +28,9 @@ body {
 }
 
 .logo {
-  width: 157px;
-  height: 45px;
-  background-image: url('./img/logo2.svg');
+  width: 140px;
+  height: 42px;
+  background-image: url('./img/Savvas_LOGO.svg');
   background-size: cover;
 }
 
@@ -58,6 +58,7 @@ body {
   color:#495057;
   font-size: 16px;
   line-height: 45px;
+  padding-left: 0;
 }
 
 .navItem {
@@ -65,7 +66,8 @@ body {
 }
 
 .navItem:hover {
-  background-color: #e3e6ea;
+  background: #0088FF;
+  color: #FFFFFF;
 }
 
 .companyName {
@@ -749,62 +751,30 @@ footer {
 .cardSearch {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 270px;
-  max-width: 270;
+  justify-content: flex-start;
+  padding-left: 30px;
+  width: 1000px;
+  max-width: 1000px;
   min-width: 200px;
   margin-right: 10px;
 }
 
 .searchInput {
-  width: 200px;
-  max-width: 190px;
-  min-width: 100px;
+  width: 436px;
+  max-width: 436px;
   height: 40px;
-  background: #F2F3F8;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-radius: 8px;
+  background: #F9FAFC;
+  padding: 13px 18px 11px 18px;
+  border-radius: 45px;
   border: none;
-  border: 2px solid #fe6637;
   outline: none;
 }
 
 .searchInput:focus, .searchInput:hover {
-  border-color: blue;
+  border: 1px solid #0088FF;
 }
 
-.searchBtn {
-  text-decoration: none;
-  display: inline-block;
-  height: 40px;
-  width: 70px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #fe6637;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  color: #fe6637;
-  transition: .2s ease-in-out;
-}
-.searchBtn:before {
-  content: "";
-  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  top: -8px;
-  left: -75px;
-  transform: skewX(-45deg);
-}
-.searchBtn:hover {
-  background: #fe6637;
-  color: #fff;
-}
-.searchBtn:hover:before {
-  left: 150px;
-  transition: .5s ease-in-out;
-}
+
 
 @media screen and (max-width: 1500px) {
   .cardList {
@@ -854,11 +824,6 @@ footer {
 @media screen and (max-width: 900px) {
   .buttons {
     display: none;
-  }
-
-  .searchBtn {
-    margin-left: 10px;
-    min-width: 70px;
   }
 }
 
@@ -1004,6 +969,15 @@ footer {
   .cardDescription {
     line-height: normal;
   }
+  .searchInput {
+    display: none;
+  }
+  .openBtn {
+    order: -1;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1043,13 +1017,12 @@ footer {
 
 @media screen and (max-width: 420px) {
   .logo {
-    width: 125px;
-    height: 35px;
+    width: 100px;
+    height: 30px;
   }
   .openBtn {
-    margin-left: 20px;
+    margin-top: 12px;
   }
-
   .logoCont {
     padding-top: 15px;
   }
@@ -1099,19 +1072,9 @@ footer {
 }
 
 @media screen and (max-width: 370px) {
-  .logo {
-    width: 100px;
-    height: 29px;
-  }
   .openBtn {
-    margin-left: 20px;
-    margin-top: 8px;
     height: 20px;
     width: 20px;
-  }
-
-  .searchBtn {
-    margin-left: 5px;
   }
 }
 

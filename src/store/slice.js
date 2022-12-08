@@ -486,6 +486,9 @@ const slice = createSlice({
         filterCards(state, action) {
             state.categoryCards = state.cards.filter(item => item.category == action.payload)
         },
+        removeFilter(state, action) {
+            state.categoryCards = state.cards
+        },
         cardSearcher(state, action) {
             state.cardSearch = action.payload
             state.categoryCards = state.cards.filter(item => item.text.toLowerCase().includes(action.payload.toLowerCase()))
@@ -494,4 +497,4 @@ const slice = createSlice({
 })
 
 export default slice.reducer
-export const {cardOpen, burgerOpen, burgerClose, cardSearcher, filterCards} = slice.actions              
+export const {cardOpen, burgerOpen, burgerClose, cardSearcher, filterCards, removeFilter} = slice.actions              

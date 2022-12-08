@@ -10,7 +10,6 @@ const CardSearch = () => {
     return (
         <div className="cardSearch">
             <input className='searchInput' placeholder='Поиск...' value={cardSearch} onChange={e => dispatch(cardSearcher(e.target.value))}/>
-            <button className='searchBtn'>Поиск</button>
         </div>
     )
 }
